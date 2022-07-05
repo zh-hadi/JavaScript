@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Age Calculate App</title>
+
+    <style>
+      
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Age Calculater</h1>
+      <h2>Today Date</h2>
+      <div class="today-date">
+        <p class="start-date">DD / MM / YY</p>
+        <i class="fa-solid fa-calendar" onclick="popUpOpen(this)"></i>
+      </div>
+      <h2>Birth day Date</h2>
+      <div class="birth-date">
+        <p class="end-date">DD / MM / YY</p>
+        <i class="fa-solid fa-calendar" onclick="popUpOpen(this)"></i>
+      </div>
+
+      <button class="btn" onclick="calAge()">Calculate Age</button>
+
+      <p class="youAge">Age: 00 year 00 months 0 day old</p>
+    
+
+    <div class="main-pop">
+      <!-- year html code start here -->
+
+      <div class="year">
+        <div class="year-head">
+          <h2>Year</h2>
+          <button onclick="goRight(this)" id="year">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+        <div class="year-wrap">
+          <!-- <div class="year-sinlge">2022</div> -->
+        </div>
+      </div>
+      <!-- year code end here -->
+
+      <!-- month code start here -->
+      <div class="month">
+        <div class="month-head">
+          <h2>Months</h2>
+          <div>
+            <button onclick="goLeft(this)" id="monthL">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <button onclick="goRight(this)" id="month">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="month-wrap">
+          <div onclick="getMonth(this)" class="month-single">Jan</div>
+          <div onclick="getMonth(this)" class="month-single">Feb</div>
+          <div onclick="getMonth(this)" class="month-single">March</div>
+          <div onclick="getMonth(this)" class="month-single">April</div>
+          <div onclick="getMonth(this)" class="month-single">May</div>
+          <div onclick="getMonth(this)" class="month-single">June</div>
+          <div onclick="getMonth(this)" class="month-single">July</div>
+          <div onclick="getMonth(this)" class="month-single">Agu</div>
+          <div onclick="getMonth(this)" class="month-single">Sep</div>
+          <div onclick="getMonth(this)" class="month-single">Oct</div>
+          <div onclick="getMonth(this)" class="month-single">Nob</div>
+          <div onclick="getMonth(this)" class="month-single">Dec</div>
+        </div>
+      </div>
+      <!-- month code end here -->
+      <div class="day">
+        <div class="day-head">
+          <h2>Date</h2>
+          <div>
+            <button onclick="goLeft(this)" id="dayL">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <button onclick="goRight(this)" id="day">
+              OK</i>
+            </button>
+          </div>
+        </div>
+        <div class="day-wrap">
+          <!-- <div class="day-single">1</div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="main.js"></script>
+  </body>
+</html>
