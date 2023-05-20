@@ -39,7 +39,8 @@ const goLeft = (obj) => {
 // daynamic year add
 const daynamicYearAdd = () => {
   let year_html_code = ``;
-  let year = 2022;
+  let year = new  Date();
+  year = year.getFullYear();
   for (let i = 0; i < 100; i++) {
     year_html_code += `<div onclick="getYear(this)" class="year-sinlge">${year}</div>`;
     year--;
