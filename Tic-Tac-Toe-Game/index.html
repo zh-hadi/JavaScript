@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* .main{
+            height: 400px;
+            width: 400px;
+            margin: 0 auto;
+        }
+        button{
+            height: 30px;
+            width: 30px;
+            background-color: aqua;
+            border: 2px solid gray;
+        }
+
+        .row {
+            display: block;
+        } */
+    </style>
+</head>
+<body>
+    <div class="h-screen w-full flex items-center justify-center">
+        <div>
+            <div class="flex gap-2 mb-3">
+                <div id="result" class="block"></div>
+                <button id="restart" onClick="gameStartAgain()" class="border px-2 py-1 bg-green-200">Restart</button>
+            </div>
+                
+            <div class="main ">
+                <div class="row  flex">
+                    <div id="id0" onClick="handelGame(0)" class="bg-gray-200 border border-slate-600 w-10 h-10  text-center"></div>
+                    <div id="id1" onClick="handelGame(1)" class="bg-gray-200 border border-slate-600 w-10 h-10  text-center"></div>
+                    <div id="id2" onClick="handelGame(2)" class="bg-gray-200 border border-slate-600 w-10 h-10  text-center"></div>
+                </div>
+                <div class="row flex">
+                    <div id="id3" onClick="handelGame(3)" class="bg-gray-200 border border-slate-600 w-10 h-10  text-center"></div>
+                    <div id="id4" onClick="handelGame(4)" class="bg-gray-200 border border-slate-600 w-10 h-10  text-center"></div>
+                    <div id="id5" onClick="handelGame(5)" class="bg-gray-200 border border-slate-600 w-10 h-10  text-center"></div>
+                </div>
+                <div class="row flex">
+                    <div id="id6" onClick="handelGame(6)" class="bg-gray-200 border border-slate-600 w-10 h-10  text-center"></div>
+                    <div id="id7" onClick="handelGame(7)" class="bg-gray-200 border border-slate-600 w-10 h-10  text-center"></div>
+                    <div id="id8" onClick="handelGame(8)" class="bg-gray-200 border border-slate-600 w-10 h-10  text-center"></div>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
